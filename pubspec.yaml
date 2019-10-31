@@ -1,0 +1,21 @@
+name: torch_compat
+description: Plugin to turn on / off the torch or flash
+version: 1.0.0
+author: Edouard Marquez <moi@edouard-marquez.me>
+homepage: https://github.com/g123k/flutter_torch_compat
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: fr.g123k.torch_compat
+    pluginClass: TorchCompatPlugin
