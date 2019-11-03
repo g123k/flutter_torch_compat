@@ -1,5 +1,5 @@
 name: torch_compat
-description: Plugin to turn on / off the torch or flash
+description: Plugin to turn on / off the torch (or flash of the camera)
 version: 1.0.0
 author: Edouard Marquez <moi@edouard-marquez.me>
 homepage: https://github.com/g123k/flutter_torch_compat
