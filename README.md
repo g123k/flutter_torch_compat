@@ -1,14 +1,27 @@
-# torch_compat
+# Torch compat  
+  
+[![Pub](https://img.shields.io/pub/v/torch_compat.svg)](https://pub.dartlang.org/packages/torch_compat)
+  
+A plugin to enable or disable the torch of a device that works both on Android (including Android 4.x) and ioS.  
 
-Plugin to turn on&amp;#x2F;off the flash (supports Android 4.x)
+## Getting started
+### 1) Dependency setup
+  
+First import the library to your project in your `pubspec.yaml`:  
 
-## Getting Started
+```yaml
+torch_compat: ^1.0.0
+```
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+### 2) Import the library in your Dart code
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+import 'package:torch_compat/torch_compat.dart';
+```  
+
+### 3) Turn on or off the flash  
+  
+```dart
+TorchCompat.turnOn();
+TorchCompat.turnOff();  
+``` 
