@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Torch plugin example app'),
         ),
         body: Center(
           child: Column(
@@ -34,5 +34,12 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    // Mandatory for Camera 1 on Android
+    TorchCompat.dispose();
+    super.dispose();
   }
 }

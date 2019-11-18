@@ -52,6 +52,7 @@ class TorchCamera1Impl(private val context: Context) : BaseTorch() {
 
     override fun dispose() {
         camera?.release()
+        camera = null
     }
 
 }

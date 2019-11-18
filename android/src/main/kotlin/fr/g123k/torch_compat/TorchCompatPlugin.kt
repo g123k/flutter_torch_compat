@@ -57,6 +57,9 @@ class TorchCompatPlugin(activity: Activity) : MethodCallHandler {
             }
         } else if (call.method == "hasTorch") {
             result.success(hasLamp)
+        } else if (call.method == "dispose") {
+            torchImpl.dispose()
+            result.success(true)
         } else {
             result.notImplemented()
         }
