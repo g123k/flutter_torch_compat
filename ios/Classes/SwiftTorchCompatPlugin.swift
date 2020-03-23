@@ -24,7 +24,7 @@ public class SwiftTorchCompatPlugin: NSObject, FlutterPlugin {
                 turnOff()
                 result(true)
             }
-        } else if (call.method == "turnOn") {
+        } else if (call.method == "hasTorch") {
             result(hasTorch())
         } else {
             result(FlutterMethodNotImplemented)
