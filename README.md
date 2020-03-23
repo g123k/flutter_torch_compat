@@ -10,7 +10,7 @@ A plugin to enable or disable the torch of a device that works both on Android (
 First import the library to your project in your `pubspec.yaml`:  
 
 ```yaml
-torch_compat: ^1.0.0
+torch_compat: ^1.0.2
 ```
 
 ### 2) Import the library in your Dart code
