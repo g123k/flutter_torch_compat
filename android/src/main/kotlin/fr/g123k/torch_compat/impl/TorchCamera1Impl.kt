@@ -4,11 +4,13 @@ package fr.g123k.torch_compat.impl
 
 import android.content.Context
 import android.content.pm.PackageManager
+import android.graphics.SurfaceTexture;
 import android.hardware.Camera
 
 class TorchCamera1Impl(private val context: Context) : BaseTorch() {
 
     private var camera: Camera? = null
+    private var surface: SurfaceTexture? = null
 
     private fun initCamera(): Camera? {
         if (camera == null) {
@@ -17,6 +19,8 @@ class TorchCamera1Impl(private val context: Context) : BaseTorch() {
             } catch (e: Exception) {
                 null
             }
+            surface = SurfaceTexture(0)
+            camera?.setPreviewTexture(surface)
         }
 
         return camera
@@ -51,6 +55,7 @@ class TorchCamera1Impl(private val context: Context) : BaseTorch() {
     }
 
     override fun dispose() {
+        surface?.release()
         camera?.release()
         camera = null
     }
