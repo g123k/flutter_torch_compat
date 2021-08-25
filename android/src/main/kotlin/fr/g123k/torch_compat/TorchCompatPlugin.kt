@@ -26,7 +26,7 @@ class TorchCompatPlugin(activity: Activity) : MethodCallHandler {
         }
 
         activity.application.registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks() {
-            override fun onActivityStopped(activity: Activity?) {
+            override fun onActivityStopped(activity: Activity) {
                 torchImpl.dispose()
             }
         })
