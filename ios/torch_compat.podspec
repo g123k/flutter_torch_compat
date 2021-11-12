@@ -5,9 +5,9 @@
 Pod::Spec.new do |s|
   s.name             = 'torch_compat'
   s.version          = '0.0.1'
-  s.summary          = 'A new flutter plugin project.'
+  s.summary          = 'Plugin to turn on&amp;#x2F;off the flash (supports Android 4.x)'
   s.description      = <<-DESC
-A new flutter plugin project.
+Plugin to turn on&amp;#x2F;off the flash (supports Android 4.x)
                        DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
